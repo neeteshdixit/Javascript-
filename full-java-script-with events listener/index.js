@@ -3,7 +3,6 @@
 //     console.log(event);
 //     let fpara = document.getElementById('fpara');
 //     fpara.textContent = 'Hello Ayushi! This is changed using JavaScript.';
-
 // }
 
 // let fpara = document.getElementById('fpara');
@@ -29,3 +28,5 @@
 //     para.addEventListener('click', alertPara);
 //     para.textContent = 'Paragraph ' + (i + 1) + ' clicked!';
 // }    
+
+   
