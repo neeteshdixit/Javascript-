@@ -9,4 +9,5 @@
 let firstPromise = new Promise((resolve, reject) => {
     console.log("Promise is pending");
     resolve("Promise is fulfilled");
-});
+}); 
+
