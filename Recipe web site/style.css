@@ -3,16 +3,55 @@
     padding: 0;
     box-sizing: border-box;
 }
-.navlist{
-    list-style: none;
-}
+body{
+background: #3F5EFB;
+background: radial-gradient(circle, rgba(63, 94, 251, 1) 8%, rgba(79, 92, 239, 1) 40%, rgba(252, 70, 107, 1) 94%);}
 .container{
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     overflow-x: none;
+    
+}
+nav{
+    width: 100%;
+    overflow-x: none;
+}
+
+.navlist{
+    width: 100%;
+    padding: 15px;
+    /* margin-right: 15px;
+    margin-left: 15px; */
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .navcontainer{
     width: 100vw;
-    background-color: aqua;
-    height: 60px;
+    /* background-color: aqua; */
+    background: #170e78;
+    background: linear-gradient(90deg, rgba(23, 14, 120, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#navlogo{
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: chocolate;
+}
+
+a{
+    text-decoration: none;
+    color: chocolate;
+    font-weight: bold;
+}
+.navitems{
+    display: flex;
+    gap: 20px;
 }
