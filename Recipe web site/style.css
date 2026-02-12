@@ -59,8 +59,30 @@ a{
 .footerbox{
     background: #170e78;
     background: linear-gradient(90deg, rgba(23, 14, 120, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-    color: aliceblue;
     width: 100%;
     text-align: center;
     min-height: 40px;
+    
+}
+
+.footerbox p{
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+.contentbox{
+    width: 70%;
+    margin: auto;
+    border: 1px solid black;
+    background: #850a0a;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+}
+.rightbox img{
+    border-radius: 30px;
 }
