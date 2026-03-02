@@ -33,3 +33,4 @@ router.delete("/delete", (req,res)=>{
     res.send("delete request")
 })
 
+export default router;
