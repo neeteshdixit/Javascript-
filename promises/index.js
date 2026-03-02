@@ -68,7 +68,7 @@ let promise4 = new Promise((resolve, reject) => {
     setTimeout(() => resolve("hello 3"), 1000);
 });
 
-Promise.all([promise1, promise, promise3, promise4])
+Promise.all([promise1, promise2, promise3, promise4])
 .then((values) => {
     console.log("values:", values);
     return "All promises resolved!";
