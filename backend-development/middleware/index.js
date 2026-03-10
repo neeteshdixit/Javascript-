@@ -1,30 +1,34 @@
 import express from "express";
+import middleware from "./routes/routes.js";
 
 const app = express();
 
 app.use(express.json()); // Middleware to parse JSON bodies
 // middleware - logging, auth , validation
 
-const loggingmiddleware = (req, res,next)=>{
-  console.log("logging kra rha hun");
-  next();
-}
+app.use('/api', middleware);
 
-const authmiddleware = (req, res,next)=>{
-  console.log("auth kra rha hun");
-  res.send("chaloooooo");
-  // next();
-}
+// const loggingmiddleware = (req, res,next)=>{
+//   console.log("logging kra rha hun");
+//   next();
+// }
 
-const validationmiddleware = (req, res,next)=>{
-  console.log("validation kra rha hun");
-  next();
-}
+// const authmiddleware = (req, res,next)=>{
+//   console.log("auth kra rha hun");
+//   res.send("chaloooooo");
+//    next();
+// }
+
+// const validationmiddleware = (req, res,next)=>{
+//   console.log("validation kra rha hun");
+//   next();
+// }
 
 
-app.use(loggingmiddleware);
-app.use(authmiddleware);
-app.use(validationmiddleware);
+// app.use(loggingmiddleware);
+// app.use(authmiddleware);
+// app.use(validationmiddleware);
+
 
 app.get("/", (req, res) => {
   console.log("mein route handler hun")
@@ -33,5 +37,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+  console.log("Server is running on port https://localhost:3000");
 });
